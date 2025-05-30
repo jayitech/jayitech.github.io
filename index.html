@@ -1,301 +1,619 @@
 <!DOCTYPE html>
-<!--html>
+<html lang="en">
 <head>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAYITECH - Next-Gen Cloud & AI Solutions for Modern SMEs</title>
+    <meta name="description" content="Transform your business with innovative cloud infrastructure, AI-powered tools, and simple SaaS solutions designed for the future of work.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#8B5CF6',
+                        accent: '#06B6D4'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-gradient-hero {
+            background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 50%, #CBD5E1 100%);
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+        }
+        .bg-gradient-secondary {
+            background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+        }
+        .bg-gradient-accent {
+            background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+        }
+        .text-gradient-primary {
+            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-secondary {
+            background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
-<body>
-  <page size="A6">
-    <div class="container">
-      <div class="leftPanel">
-        <img src="Jay.jpg"/>
-        <div class="details">
-          <div class="item bottomLineSeparator">
-            <h2>
-              CONTACT
-            </h2>
-            <div class="smallText">
-              <p>
-                <i class="fa fa-phone contactIcon" aria-hidden="true"></i>
-                (+44) 744 850 4114
-              </p>
-              <p>
-                <!--i class="fa fa-envelope contactIcon" aria-hidden="true"></i-->
-                <a href="mailto:jayasanjeev@yahoo.com">
-                       jayasanjeev@yahoo.com
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gradient-primary">JAYITECH</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-slate-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="#services" class="text-slate-700 hover:text-blue-600 font-medium">Services</a>
+                    <a href="#about" class="text-slate-700 hover:text-blue-600 font-medium">About</a>
+                    <a href="#contact" class="text-slate-700 hover:text-blue-600 font-medium">Contact</a>
+                    <a href="#contact" class="bg-gradient-primary text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-hero pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                            Next-Gen <span class="text-gradient-primary">Cloud & AI</span> Solutions for Modern SMEs
+                        </h1>
+                        <p class="text-xl text-slate-600 leading-relaxed">
+                            Transform your business with innovative cloud infrastructure, AI-powered tools, 
+                            and simple SaaS solutions designed for the future of work.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-gradient-primary text-white px-8 py-4 text-lg font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all text-center">
+                            Start Your Journey
+                        </a>
+                        <a href="#contact" class="border-2 border-slate-300 text-slate-700 px-8 py-4 text-lg font-semibold rounded-lg hover:bg-white hover:shadow-lg transition-all text-center">
+                            Schedule Consultation
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-6 pt-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-slate-900">2024</div>
+                            <div class="text-sm text-slate-600">Founded</div>
+                        </div>
+                        <div class="w-px h-12 bg-slate-300"></div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-slate-900">AI-First</div>
+                            <div class="text-sm text-slate-600">Approach</div>
+                        </div>
+                        <div class="w-px h-12 bg-slate-300"></div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-slate-900">Cloud</div>
+                            <div class="text-sm text-slate-600">Native</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="IT professionals working together" class="rounded-2xl shadow-2xl w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-white/90 p-6 rounded-xl shadow-lg backdrop-blur-md border border-white/50">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-slate-700 font-medium">Systems Online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+                    Modern <span class="text-gradient-secondary">Cloud & AI</span> Solutions
+                </h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    From intelligent automation to scalable SaaS platforms, we build 
+                    the future of work for ambitious startups and growing businesses.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Cloud Infrastructure -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-slate-100 hover:transform hover:scale-105">
+                    <div class="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="text-white h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Cloud Infrastructure</h3>
+                    <p class="text-slate-600 mb-6">Modern cloud-native solutions built for scalability. Multi-cloud strategies, serverless architecture, and automated deployment pipelines.</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Multi-Cloud Setup</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Serverless Solutions</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Auto-Scaling</li>
+                    </ul>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-slate-100 hover:transform hover:scale-105">
+                    <div class="w-14 h-14 bg-gradient-secondary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="text-white h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">AI & Machine Learning</h3>
+                    <p class="text-slate-600 mb-6">Intelligent automation and data insights to transform your business processes and decision-making capabilities.</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>AI Automation</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Predictive Analytics</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Smart Insights</li>
+                    </ul>
+                </div>
+
+                <!-- Task Tracking SaaS -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-slate-100 hover:transform hover:scale-105">
+                    <div class="w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mb-6">
+                        <svg class="text-white h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path d="M15 8a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Task Tracking SaaS</h3>
+                    <p class="text-slate-600 mb-6">Simple, powerful project management tools designed for modern teams. Track progress, collaborate efficiently.</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Team Collaboration</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Progress Tracking</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Real-time Updates</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud Security -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-slate-100 hover:transform hover:scale-105">
+                    <div class="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="text-white h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Cloud Security</h3>
+                    <p class="text-slate-600 mb-6">Zero-trust security architecture with AI-powered threat detection and automated compliance monitoring.</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Zero-Trust Security</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>AI Threat Detection</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Compliance Automation</li>
+                    </ul>
+                </div>
+
+                <!-- API Integration -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-slate-100 hover:transform hover:scale-105">
+                    <div class="w-14 h-14 bg-gradient-secondary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="text-white h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 000 2v9a2 2 0 002 2h1a1 1 0 000-2H5V6a1 1 0 00-1-1H3zM14.707 4.293a1 1 0 00-1.414 0L9.586 8l3.707 3.707a1 1 0 001.414-1.414L12.414 8l2.293-2.293a1 1 0 000-1.414zM17 6v9a2 2 0 01-2 2h-1a1 1 0 100 2h1a2 2 0 002-2V6a1 1 0 10-2 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">API Integration</h3>
+                    <p class="text-slate-600 mb-6">Seamless system integration and API development to connect your tools and streamline workflows.</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Custom APIs</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>System Integration</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Workflow Automation</li>
+                    </ul>
+                </div>
+
+                <!-- SaaS Development -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-slate-100 hover:transform hover:scale-105">
+                    <div class="w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center mb-6">
+                        <svg class="text-white h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">SaaS Development</h3>
+                    <p class="text-slate-600 mb-6">Custom SaaS platform development from concept to deployment, focusing on user experience and scalability.</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Custom Development</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>User Experience</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Scalable Architecture</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-gradient-primary rounded-3xl p-8 lg:p-12 text-center">
+                <h3 class="text-3xl font-bold text-white mb-4">Ready to Build the Future Together?</h3>
+                <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                    Let's discuss your vision and explore how our cloud-native, AI-powered 
+                    solutions can accelerate your startup's growth.
+                </p>
+                <a href="#contact" class="bg-white text-blue-600 hover:bg-gray-50 px-8 py-4 text-lg font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all inline-block">
+                    Book Discovery Call
                 </a>
-              </p>
-              <p>
-               <!-- <i class="fa fa-map-marker contactIcon" aria-hidden="true"></i>-->
-                London, United Kingdom
-              </p>
-              <p>
-                <i class="fa fa-linkedin-square contactIcon" aria-hidden="true"></i>
-                <a href="#">
-                  in/jayasanjeev
-                </a>
-              </p>
             </div>
-          </div>
-          <div class="item bottomLineSeparator">
-            <h2>
-              SKILLS
-            </h2>
-            <div class="smallText">
-              <div class="skill">
-                <div>
-                  <span>Solution Architecture & Design</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-hero">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+                            Building Tomorrow's <span class="text-gradient-secondary">Workspace Today</span>
+                        </h2>
+                        <p class="text-xl text-slate-600 leading-relaxed">
+                            Founded in 2024, JAYITECH is a new generation startup focused on 
+                            creating intelligent, cloud-native solutions. We combine cutting-edge 
+                            AI technology with simple, powerful SaaS products to help businesses 
+                            work smarter and scale faster.
+                        </p>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-white/80 p-6 rounded-xl shadow-sm border border-white/50">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">2024</div>
+                            <div class="text-slate-700 font-medium">Founded</div>
+                        </div>
+                        <div class="bg-white/80 p-6 rounded-xl shadow-sm border border-white/50">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">AI-First</div>
+                            <div class="text-slate-700 font-medium">Technology Stack</div>
+                        </div>
+                        <div class="bg-white/80 p-6 rounded-xl shadow-sm border border-white/50">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">Cloud</div>
+                            <div class="text-slate-700 font-medium">Native Architecture</div>
+                        </div>
+                        <div class="bg-white/80 p-6 rounded-xl shadow-sm border border-white/50">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">SaaS</div>
+                            <div class="text-slate-700 font-medium">Product Focus</div>
+                        </div>
+                    </div>
                 </div>
-                <!--div class="yearsOfExperience">
-                  <span class="alignright">20</span>
-                  <span class="alignleft">years</span>
-                </div-->
-              </div>
 
-              <div class="skill">
-                <div>
-                  <span>Cloud Architecture (AWS, Azure)</span>
+                <div class="space-y-6">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Modern office technology setup" class="rounded-2xl shadow-xl w-full">
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                             alt="Networking equipment" class="rounded-xl shadow-lg w-full h-32 object-cover">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                             alt="UK business environment" class="rounded-xl shadow-lg w-full h-32 object-cover">
+                    </div>
                 </div>
-                <!--div class="yearsOfExperience">
-                  <span class="alignright">3</span>
-                  <span class="alignleft">years</span>
-                </div-->
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Foundational AI/ML knowledge</span>
-                </div>
-                <!--div class="yearsOfExperience">
-                  <span class="alignright">3</span>
-                  <span class="alignleft">years</span>
-                </div-->
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Agile Project Management (SAFe)</span>
-                </div>
-                <!--div class="yearsOfExperience">
-                  <span class="alignright">2</span>
-                  <span class="alignleft">years</span>
-                </div-->
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Stakeholder Management & Communication</span>
-                </div>
-                <!--div class="yearsOfExperience">
-                  <span class="alignright">2</span>
-                  <span class="alignleft">years</span>
-                </div-->
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Unified Communications & Collaboration Platforms</span>
-                </div>
-                <!--div class="yearsOfExperience">
-                  <span class="alignright">2</span>
-                  <span class="alignleft">years</span>
-                </div-->
-              </div>
-
-              <div class="skill">
-                <!--div>
-                  <span>CloudFormation</span>
-                </div-->
-                <!--div class="yearsOfExperience">
-                  <span class="alignright">2</span>
-                  <span class="alignleft">years</span>
-                </div-->
-              </div>
-
-              <div class="skill">
-                <!--div>
-                  <span>AWS CDK</span>
-                </div-->
-                <!--div class="yearsOfExperience">
-                    <span class="alignright">1</span>
-                    <span class="alignleft">year</span>
-                </div-->
-              </div>
-
             </div>
-          </div>
-          <div class="item">
-            <h2>
-              EDUCATION
-            </h2>
-            <div class="smallText">
-              <p class="bolded white" >
-                Bachelor of Science
-              </p>
-              <p>
-                - Mathmatics
-              </p>
-              <p>
-                University of Calicut
-              </p>
-              <p>
-                
-              </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-6">
+                    What Our <span class="text-gradient-primary">Partners Say</span>
+                </h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+                    Hear from innovative startups and growing businesses who are building 
+                    the future with our cloud and AI solutions.
+                </p>
             </div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="rightPanel">
-        <div>
-          <h1>
-            JAYASANJEEV KUNNATH MADATHIL
-          </h1>
-          <div class="smallText">
-            <h3>
-              SOLUTION ARCHITECT
-            </h3>
-          </div>
-        </div>
-        <div>
-          <h2>
-            About me
-          </h2>
-          <div class="smallText">
-            <p>
-            Innovative and results-driven Solution Architect with over 20 years of experience in the IT industry. Recognized for designing and implementing scalable, secure, and efficient end-to-end technology solutions that align with business objectives. Proven track record in managing complex projects, engaging stakeholders, and driving innovation.
-            </p>
-            <p>
-              <!--You can follow Ivo on LinkedIn @ivopinto01.-->
-            </p>
-          </div>
-        </div>
-        <div class="workExperience">
-          <h2>
-            Work experience
-          </h2>
-          <ul>
-            <li>
-              <div class="jobPosition">
-                <span class="bolded">
-                    SOLUTION ARCHITECT
-                </span>
-                <span>
-                    November 2021 – July 2023
-                </span>
-              </div>
-              <div class="projectName bolded">
-                <span>
-                    Tata Consultancy Services LTD (Client: Vodafone Business), Newbury 
-                </span>
-              </div>
-              <div class="smallText">
-                <p>
-                    Designed and delivered scalable, end-to-end technology solutions, ensuring alignment with strategic technology choices and business objectives while driving innovation.
-                </p>
-                <ul>
-                  <li>
-                    Led cross-functional stakeholder collaborations to define and document solution designs, bridging business objectives with IT capabilities.
-                  </li>
-                  <li>
-                    Ensured solutions adhered to compliance requirements and industry standards
-                  </li>
-                  <li>
-                    Performed impact assessments, created blueprints, and reviewed designs
-                  </li>
-                  <li>
-                    Managed and supported other Solution Architects in design delivery
-                  </li>
-                </ul>
-                <!-- <p>
-                   <span class="bolded">Skills: </span>AWS Services, Architecture
-                </p>  -->
-              </div>
-            </li>
 
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <span>★★★★★</span>
+                        </div>
+                        <span class="ml-2 text-slate-600 font-medium">5.0</span>
+                    </div>
+                    <blockquote class="text-slate-700 mb-6 italic">
+                        "JAYITECH's AI-powered task tracking platform revolutionized how our team collaborates. The intelligent automation features save us hours every week."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                            AC
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Alex Chen</div>
+                            <div class="text-slate-600 text-sm">Co-Founder, InnovateLab</div>
+                        </div>
+                    </div>
+                </div>
 
-            <li>
-              <div class="jobPosition">
-                <span class="bolded">
-                  TECHNICAL ARCHITECT
-                </span>
-                <span>
-                  September 2018 - October 2021
-                </span>
-              </div>
-              <div class="projectName bolded">
-                <span>
-                  Tata Consultancy Services LTD (Client: EY Global Services Limited), London
-                </span>
-              </div>
-              <div class="smallText">
-                <p>
-                  Led the design and implementation of Cisco Unified Communication infrastructure projects globally, specializing in IP Telephony and Contact Center solutions, enhancing  communication capabilities for end-user worldwide.
-                </p>
-                <ul>
-                  <li>
-                    Managed global IP Telephony and Contact Center infrastructure, ensuring high availability and performance.
-                  </li>
-                  <li>
-                    Collaborated with stakeholders to ensure solution designs met both current and future needs, balancing innovative approaches with legacy system constraints.
-                  </li>
-                  <li>
-                    Provided high-level consultancy services for office expansion and technology integration projects
-                  </li>
-                  <li>
-                    Mentored and trained team members, fostering skill development and knowledge sharing
-                  </li>
-                </ul>
-                <!-- <p>
-                   <span class="bolded">Skills: </span>AWS Services, Architecture
-                </p>  -->
-              </div>
-            </li>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <span>★★★★★</span>
+                        </div>
+                        <span class="ml-2 text-slate-600 font-medium">5.0</span>
+                    </div>
+                    <blockquote class="text-slate-700 mb-6 italic">
+                        "Their cloud-native architecture approach helped us scale from 10 to 100+ users seamlessly. The serverless solutions are incredibly cost-effective."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-secondary rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                            MG
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">Maria González</div>
+                            <div class="text-slate-600 text-sm">CTO, GrowthTech Startup</div>
+                        </div>
+                    </div>
+                </div>
 
-            <li>
-              <div class="jobPosition">
-                <span class="bolded">
-                    TECHNICAL LEAD
-                </span>
-                <span>
-                    July 2011 - August 2018
-                </span>
-              </div>
-              <div class="projectName bolded">
-                <span>
-                    Tata Consultancy Services LTD (Client: PricewaterhouseCoopers), Bangalore, India
-                </span>
-              </div>
-              <div class="smallText">
-                <p>
-                    Managed the Global IT infrastructure, focusing on Cisco Unified Communications(UC) systems.
-                </p>
-                <ul>
-                  <li>
-                    Provided operational support for resolving complex issues within global Cisco UC infrastructure
-                  </li>
-                  <li>
-                    Performed health assessments on Cisco UC applications to ensure system reliability and performance.
-                  </li>
-                  <li>
-                    Orchestrated integration of cluster nodes and virtualization of unified applications
-                  </li>
-                  <li>
-                    Mentored and trained team members, fostering skill development and knowledge sharing
-                  </li>
-                </ul>
-                <!-- <p>
-                   <span class="bolded">Skills: </span>AWS Services, Architecture
-                </p>  -->
-              </div>
-            </li>
-          </ul>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <span>★★★★★</span>
+                        </div>
+                        <span class="ml-2 text-slate-600 font-medium">5.0</span>
+                    </div>
+                    <blockquote class="text-slate-700 mb-6 italic">
+                        "Working with JAYITECH feels like having a tech co-founder. They understand startup challenges and deliver solutions that actually solve real problems."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                            DK
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900">David Kumar</div>
+                            <div class="text-slate-600 text-sm">CEO, NextGen Solutions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </page> 
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-hero">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+                    Ready to Build Something Amazing?
+                </h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    Let's discuss your vision and explore how our cloud-native, AI-powered 
+                    solutions can help bring your ideas to life.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="space-y-8">
+                    <div class="bg-white/80 p-8 rounded-2xl shadow-lg border border-white/50">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-6">Get in Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
+                                    <svg class="text-white h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-slate-900">Phone</div>
+                                    <div class="text-slate-600">+44 20 7123 4567</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-secondary rounded-xl flex items-center justify-center">
+                                    <svg class="text-white h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-slate-900">Email</div>
+                                    <div class="text-slate-600">hello@jayitech.co.uk</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center">
+                                    <svg class="text-white h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-slate-900">Address</div>
+                                    <div class="text-slate-600">123 Tech Street, London, EC2A 4NE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-primary p-8 rounded-2xl text-center">
+                        <h4 class="text-xl font-bold text-white mb-4">Emergency IT Support</h4>
+                        <p class="text-blue-100 mb-6">
+                            Critical system down? Our emergency response team is available 
+                            24/7 for existing clients.
+                        </p>
+                        <a href="tel:+442071234567" class="bg-white text-blue-600 hover:bg-gray-50 px-6 py-3 font-semibold rounded-lg hover:shadow-lg transition-all inline-block">
+                            Call Emergency Line
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white/80 p-8 rounded-2xl shadow-lg border border-white/50">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Request a Free Consultation</h3>
+                    <form class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-slate-700 block mb-2">First Name</label>
+                                <input type="text" placeholder="John" required 
+                                       class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="text-slate-700 block mb-2">Last Name</label>
+                                <input type="text" placeholder="Smith" required 
+                                       class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="text-slate-700 block mb-2">Email Address</label>
+                            <input type="email" placeholder="john.smith@company.co.uk" required 
+                                   class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label class="text-slate-700 block mb-2">Company Name</label>
+                            <input type="text" placeholder="Your Company Ltd" required 
+                                   class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label class="text-slate-700 block mb-2">Phone Number</label>
+                            <input type="tel" placeholder="+44 20 1234 5678" required 
+                                   class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label class="text-slate-700 block mb-2">Services Interested In</label>
+                            <select required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="Cloud Infrastructure">Cloud Infrastructure</option>
+                                <option value="AI & Machine Learning">AI & Machine Learning</option>
+                                <option value="Task Tracking SaaS">Task Tracking SaaS</option>
+                                <option value="Cloud Security">Cloud Security</option>
+                                <option value="API Integration">API Integration</option>
+                                <option value="SaaS Development">SaaS Development</option>
+                                <option value="Startup Consultation">Startup Consultation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="text-slate-700 block mb-2">Message</label>
+                            <textarea rows="4" placeholder="Tell us about your current IT challenges and goals..." required 
+                                      class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full bg-gradient-primary text-white py-4 font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all">
+                            Send Message & Schedule Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-3xl font-bold text-gradient-primary">JAYITECH</span>
+                        <p class="text-slate-400 mt-4">
+                            Empowering UK SMEs with cutting-edge IT solutions since 2024.
+                            Your trusted technology partner for sustainable growth.
+                        </p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Cloud Infrastructure</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">AI & Machine Learning</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Task Tracking SaaS</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Cloud Security</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">API Integration</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">SaaS Development</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">News</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <div class="text-slate-400 text-sm">
+                        © 2024 JAYITECH. All rights reserved. Registered in England & Wales.
+                    </div>
+                    <div class="flex items-center space-x-6 text-sm text-slate-400">
+                        <span class="flex items-center">
+                            <svg class="mr-2 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            ISO 27001 Certified
+                        </span>
+                        <span class="flex items-center">
+                            <svg class="mr-2 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            GDPR Compliant
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you within 24 hours.');
+            this.reset();
+        });
+    </script>
 </body>
-</html-->
+</html>
